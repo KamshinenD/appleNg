@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./CSS/music.css">
+    <link rel="stylesheet" href="./CSS/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./Images/apple logo.png" type="image/x-icon">
+    <title>Apple Music - App (NG)</title>
+</head>
+<body>
+    <div id="backdrop"> </div>
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-hamburger" id="toggle-nav">
+                <i class="bi bi-list hamburger-img"></i>
+            </div>
+            <div class="nav-hamburger" id="toggle-nav-2">
+                <i class="bi bi-x-lg hamburger-img"></i>
+            </div>
+            <div class="nav-apple-logo"> <a href="/index.html"><i class="bi bi-apple apple-logo"></i></a></div>
+        
+            <!-- Desktop Nav bar -->
+            <ul class="desktop-menu-list" id="desktop-menu-list">
+                    <li class=" desktop-menu-list-item"> <a href="/index.html"><i class="bi bi-apple"></i></a></li>
+                    <li class=" desktop-menu-list-item"><a href="./macpage.html">Mac</a></li>
+                    <li class=" desktop-menu-list-item"><a href="/ipad.html">iPad </a></li>
+                    <li class=" desktop-menu-list-item"><a href="/iphone.html">iPhone</a></li>
+                    <li class=" desktop-menu-list-item"><a href="#">Music </a></li>
+                    <li class=" desktop-menu-list-item"><a href="/support.html">Support</a></li>
+                    <li class=" desktop-menu-list-item"><a href="/where-to-buy.html">Where to Buy</a></li>
+                    <div class="desktop-menu-list-item" id="search"><i class="bi bi-search"></i></div>
+            </ul>
+            <!-- Search box on Desktop -->
+            <div class="desktop-search-container search-container" id="desktop-search-container">
+                <div>
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search apple.com" class="search-input">
+                    <i class="bi bi-x-lg" id="close-search"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile drop down menu -->
+        <div class="mobile-drop-down-container" id="mobile-drop-down-container">
+            <div class="drop-down-top">
+                <div class="search-container">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search apple.com">
+                </div>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list-item top"><a href="./macpage.html">Mac</a></li>
+                <li class="menu-list-item"><a href="/ipad.html">iPad </a></li>
+                <li class="menu-list-item"><a href="/iphone.html">iPhone</a></li>
+                <li class="menu-list-item"><a href="#">Music </a></li>
+                <li class="menu-list-item"><a href="/support.html">Support</a></li>
+                <li class="menu-list-item"><a href="/where-to-buy.html">Where to Buy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="iphone-hero">
+        <div class="iphone-icons animate__animated animate__fadeInRight">
+           <div class="icon-img-container">
+               <img src="./Images/Music-images/apple_music_dark__e7el1dqc7ouq_large.svg" alt="">
+               <p><a>Apple Music </a></p>
+               <!-- <p class="new">New</p> -->
+           </div>
+           <div class="icon-img-container">
+               <img src="./Images/Music-images/airpods_dark__ev9iwonn6526_large.svg" alt="">
+               <p><a>AirPods </a></p>
+               <!-- <p class="new">New</p> -->
+           </div>
+           <div class="icon-img-container">
+                <img src="./Images/Music-images/airpods_pro_dark__fq982ukhrn2a_large.svg" alt="">
+                <p> <a>AirPods Pro </a></p>
+            </div>
+           <div class="icon-img-container">
+                <img src="./Images/Music-images/airpods_max_dark__dkjnlygbergy_large.svg" alt="">
+                <p><a>AirPods Max </a></p>
+                <p class="new">New</p>
+            </div>
+           <div class="icon-img-container">
+                <img src="./Images/Music-images/ipod_touch_dark__cnll1unb2no2_large.svg" alt="">
+                <p> <a>iPod touch </a></p>
+           </div>
+    </section>
+
+    <section class="hero-section">
+        <div id="video-container">
+            <!-- Video background on big screen -->
+            <video  id="bgvideo" poster="/Images/Music-images/hero_fallback__w1cu9asao7mi_small_2x.jpg" muted class="bigscreenVideo">
+                <!-- loop autoplay -->
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/webm> 
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/ogg> 
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/mp4>
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/3gp>
+                Your browser does not support the video tag.
+            </video> 
+            
+            <!-- Video background on small screen -->
+            <video id="bgvideo" poster="/Images/Music-images/hero_fallback__w1cu9asao7mi_small_2x.jpg" muted autoplay loop class="smallscreenvideo">
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/webm> 
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/ogg> 
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/mp4>
+            <source src='/Images/video/Apple Music - Worldwide.mp4' type=video/3gp>
+                Your browser does not support the video tag.
+            </video> 
+          </div>
+          <div class="music-lives">
+            <img src="/Images/Music-images/apple_music__ff0xz76umvue_medium.png" alt="">
+            <h1>Music lives here.</h1>
+            <div class="learn-more">
+                <button>Try it free</button>
+                <a href="https://www.apple.com/ng/apple-music/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+            </div>
+        </div>
+        <div class="control">
+            <img class="img1" src="/Images/Music-images/pause_icon__earjsqrbt7iq_large (1).svg" alt="" id="pause">
+            <img class="img2" src="/Images/Music-images/play_icon__z9eoy6e8aoia_large.svg" alt="" id="play">
+        </div>
+    </section>
+  <div class="between"></div>
+    <section class="airpods-max">
+        <div class="learn-more">
+            <button>Buy</button>
+            <a href="https://www.apple.com/ng/airpods-max/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+        </div>
+    </section>
+    <section class="airpods-pro">
+        <div class="airpods-pro-container">
+            <div class="airpods-pro-left">
+                <h3>AirPods Pro</h3>
+                <h1>Magic like you’ve never heard.</h1>
+                <div class="learn-more">
+                    <button>Buy</button>
+                    <a href="https://www.apple.com/ng/apple-music/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+            </div>
+            <div class="airpods-pro-right">
+                <img src="/Images/Music-images/airpods_pro__ekx2tfj01uwm_large.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--  airpods and ipod card section -->
+    <section class="airpods-ipods-card">
+        <div class="airpods-ipods-card-single">
+           <div class="airpods-ipods-card-single-top">
+               <h3>Airpods</h3>
+               <h1>More magical <br> than ever.</h1>
+               <div class="learn-more">
+                   <button>Buy</button>
+                   <a href="https://www.apple.com/ng/airpods/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+               </div>
+           </div>
+           <div class="airpods-ipods-card-single-bottom">
+                <img src="/Images/Music-images/airpods__bec4fz5llegi_large.jpg" alt="">
+           </div>
+        </div>
+        <div class="airpods-ipods-card-single">
+            <div class="airpods-ipods-card-single-top">
+                <h3>iPod touch</h3>
+                <h1>The music you love. On the go.</h1>
+                <div class="learn-more">
+                    <button>Buy</button>
+                    <a href="https://www.apple.com/ng/ipod-touch/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+            </div>
+            <div class="airpods-ipods-card-single-bottom">
+                 <img src="/Images/Music-images/ipod__d53klaz6zj42_large.jpg" alt="">
+            </div>
+         </div>
+    </section>
+
+    <!-- Music creation from apple section -->
+    <section class="music-creation-section">
+        <div class="music-creation-top">
+            <h1>Music creation apps from Apple.</h1>
+        </div>
+        <div class="music-creation-center">
+            <img src="/Images/Music-images/appsfromapple__ccg14s8qy6qa_large.jpg" alt="">
+        </div>
+        <div class="music-creation-bottom">
+            <div class="music-creation-bottom-container">
+                <div class="music-product">
+                    <img src="/Images/Music-images/musicmemos__d67dg2t2c66a_large.jpg" alt="">
+                    <h3>Music Memos</h3>
+                    <a href="https://support.apple.com/en-ng/HT211824"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+                <div class="music-product">
+                    <img src="/Images/Music-images/garageband__bfloyybsgche_large.jpg" alt="">
+                    <h3>GarageBand</h3>
+                    <a href="https://apps.apple.com/ng/app/garageband/id408709785?mt=8"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+                <div class="music-product">
+                    <img src="/Images/Music-images/logicprox__ezsst8llu24i_large.jpg" alt="">
+                    <h3>Logic Pro</h3>
+                    <a href="https://apps.apple.com/ng/app/logic-pro-x/id634148309?mt=12"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+                <div class="music-product">
+                    <img src="/Images/Music-images/mainstage3__fesr1aswedm6_large.jpg" alt="">
+                    <h3>MainStage 3</h3>
+                    <a href="https://apps.apple.com/ng/app/mainstage-3/id634159523?mt=12"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="working-with-apple">
+        <div class="working-with-apple-inner">
+            <img src="/Images/Music-images/apple_music__ff0xz76umvue_large.png" alt="">
+            <h1>Working with Apple Music</h1>
+            <p>Discover all the ways you can showcase content on Apple Music. Access MusicKit, RSS feeds, widgets, brand guidelines, badge art, and more.</p>
+            <a href="https://www.apple.com/ng/music/workingwithus/"> Learn more <span class="chevron"><i class="bi bi-chevron-right"></i></span></a>     
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-paragraphs">
+           <p>* ₦900.00/month after free trial. No commitment. Plan automatically renews after trial until cancelled.</p>
+        </div>
+        <div class="footer-container-mobile">
+            <ul class="footer-accordion">
+                <li class="footer-item">
+                    <div class="title-open">
+                        <p>Explore</p>
+                        <button class="footer-btn">
+                            <span class="plus"><i class="bi bi-plus"></i></span>
+                            <span class="minus"><i class="bi bi-x"></i></span>
+                        </button>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-link-item"><a href="./macpage.html">Mac </a></li>
+                            <li class="footer-link-item"><a href="#">iPad </a></li>
+                            <li class="footer-link-item"><a href="#">iPhone </a></li>
+                            <li class="footer-link-item"><a href="#">Music </a></li>
+                            <li class="footer-link-item"><a href="#">AirPods </a></li>
+                            <li class="footer-link-item"><a href="#">AirTag </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footer-item">
+                    <div class="title-open">
+                        <p>Services</p>
+                        <button class="footer-btn">
+                            <span class="plus"><i class="bi bi-plus"></i></span>
+                            <span class="minus"><i class="bi bi-x"></i></span>
+                        </button>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-link-item"><a href="#">Apple Music </a></li>
+                            <li class="footer-link-item"><a href="#">Apple Arcade </a></li>
+                            <li class="footer-link-item"><a href="#">iCloud </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footer-item">
+                    <div class="title-open">
+                        <p>Account</p>
+                        <button class="footer-btn">
+                            <span class="plus"><i class="bi bi-plus"></i></span>
+                            <span class="minus"><i class="bi bi-x"></i></span>
+                        </button>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-link-item"><a href="#">Manage Your Apple ID</a></li>
+                            <li class="footer-link-item"><a href="#">iCloud.com </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="footer-item">
+                    <div class="title-open">
+                        <p>About Apple</p>
+                        <button class="footer-btn">
+                            <span class="plus"><i class="bi bi-plus"></i></span>
+                            <span class="minus"><i class="bi bi-x"></i></span>
+                        </button>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-link-item"><a href="#">Newsroom </a></li>
+                            <li class="footer-link-item"><a href="#">Apple Leadership </a></li>
+                            <li class="footer-link-item"><a href="#">Career Opportunities </a></li>
+                            <li class="footer-link-item"><a href="#">Investors </a></li>
+                            <li class="footer-link-item"><a href="#">Ethics & Compliance </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-container-desktop">
+            <div class="desktop-footer-items">
+                <h4>Explore</h4>
+                <ul class="desktop-footer-item-list">
+                    <li class="footer-link-item"><a href="./macpage.html">Mac </a></li>
+                     <li class="footer-link-item"><a href="#">iPad </a></li>
+                     <li class="footer-link-item"><a href="#">iPhone </a></li>
+                     <li class="footer-link-item"><a href="#">Music </a></li>
+                     <li class="footer-link-item"><a href="#">AirPods </a></li>
+                     <li class="footer-link-item"><a href="#">AirTag </a></li>
+                </ul>
+            </div>
+
+            <div class="desktop-footer-items">
+                <h4>Services</h4>
+                <ul class="desktop-footer-item-list">
+                    <li class="footer-link-item"><a href="#">Apple Music </a></li>
+                    <li class="footer-link-item"><a href="#">Apple Arcade </a></li>
+                    <li class="footer-link-item"><a href="#">iCloud </a></li>
+                </ul>
+            </div>
+            <div class="desktop-footer-items">
+                <h4>Accounts</h4>
+                <ul class="desktop-footer-item-list">
+                    <li class="footer-link-item"><a href="#">Manage Your Apple ID</a></li>
+                    <li class="footer-link-item"><a href="#">iCloud.com </a></li>
+                </ul>
+            </div>
+            <div class="desktop-footer-items">
+                <h4>Accounts</h4>
+                <ul class="desktop-footer-item-list">
+                    <li class="footer-link-item"><a href="#">Newsroom </a></li>
+                    <li class="footer-link-item"><a href="#">Apple Leadership </a></li>
+                    <li class="footer-link-item"><a href="#">Career Opportunities </a></li>
+                    <li class="footer-link-item"><a href="#">Investors </a></li>
+                    <li class="footer-link-item"><a href="#">Ethics & Compliance </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="retailer-find">
+                <p><a href="#">Find a retailer</a> near you</p>
+            </div>
+            <div class="copyright-container">
+                <div class="copyright">
+                    <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+                    <p><span class="terms"><a href="#">Terms of use</a></span> <span class="site-map"> <a>Site Map</a></span></p>
+                </div>
+                <div class="country">
+                    <p><a href="#">Nigeria</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js/script.js"></script>
+</body>
+</html>

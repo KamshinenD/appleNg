@@ -1,0 +1,718 @@
+body {
+    overflow: auto;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.learn-more a span{
+    font-size: .8rem !important;
+}
+
+.ipad-hero{
+    margin-top: 3rem;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .ipad-hero .ipad-icons .icon-img-container:nth-child(5),
+    .ipad-hero .ipad-icons .icon-img-container:nth-child(6){
+        display: none;
+    }
+}
+@media (max-width:400px) {
+    .ipad-hero .ipad-icons .icon-img-container:nth-child(3){
+        display: none;
+    }
+}
+
+
+.ipad-hero .ipad-icons{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.ipad-hero .ipad-icons .icon-img-container{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.ipad-hero .ipad-icons .icon-img-container img{
+    width: 3rem;
+    height: 3rem;
+}
+.ipad-hero .ipad-icons .icon-img-container p{
+    font-size: .7rem;
+}
+.ipad-hero .ipad-icons .icon-img-container p.new{
+    font-size: .6rem;
+    color: #be7404;
+    margin-top: .5rem;
+}
+
+.ipad-air-section{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #000000;
+    padding: 5rem 0;
+}
+
+.ipad-air-section .ipad-air-container{
+    width: 100%;
+    max-width: 1024px;
+    min-height: inherit;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 950px) {
+    .ipad-air-section .ipad-air-container{
+        grid-template-columns: 1fr;
+    }
+    .ipad-air-section .ipad-air-container .ipad-air-right{
+        background-size: contain !important;
+        background-position: center;
+    }
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-left{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 5rem; */
+    align-items: center;
+    justify-content: center;
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-right{
+    background: url('/Images/ipad-images/ipad_air__d794tkovmk02_medium.jpg') no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-left h1{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+} 
+
+.ipad-air-section .ipad-air-container .ipad-air-left .new{
+    color: #be7404;
+    font-size: 1rem!important;   
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-left p{
+    font-size: 1.3rem;   
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-left button{
+    color: #ffffff;   
+    background: #0095ff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    margin: .4rem 0;
+}
+
+.ipad-air-section .ipad-air-container .ipad-air-left a{
+   color: #077ed3;
+}
+
+.ipad-pro-section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: right;
+    padding: 4rem 0;
+}
+
+.ipad-pro-section img{
+    width: 70%;
+    height: 77vh;
+    z-index: -99;
+    /* object-fit: cover; */   
+}
+
+.ipad-pro-section .ipad-pro-text{
+    position: absolute;
+    right: 30rem;
+    top: 13rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.ipad-pro-section .ipad-pro-text h1{
+    font-size: 3.5rem;   
+}
+
+.ipad-pro-section .ipad-pro-text p{
+    font-size: 1.2rem; 
+    font-weight: 600;
+}
+
+.ipad-pro-section .ipad-pro-text button{
+    color: #ffffff;   
+    background: #0095ff;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    margin: 1rem 0;
+}
+
+
+.ipad-pro-section .ipad-pro-text a{
+   color: #077ed3;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+@media (max-width:400px) {
+    .ipad-pro-section .ipad-pro-text{
+        left: 5rem !important;
+        top: 1rem !important;
+    }   
+}
+@media (max-width:580px) {
+    .ipad-pro-section .ipad-pro-text{
+        right: 2.5rem !important;
+        top: 3rem !important;   
+    }   
+}
+
+@media (max-width:800px){
+    .ipad-pro-section img{
+        width: 95%;
+        height: 95%;
+    }
+    .ipad-pro-section .ipad-pro-text{
+        right: 9rem !important;
+        top: 3rem;      
+    }   
+}
+
+@media (max-width:1000px){
+    .ipad-pro-section{
+        min-height: 70%;
+    }
+    .ipad-pro-section .ipad-pro-text{
+        right: 25rem;
+        top: 3rem;      
+    }   
+}
+@media (max-width:1400px){
+    .ipad-pro-section img{
+        width: 90%;
+        height: 95%;
+    }
+    .ipad-pro-section .ipad-pro-text{
+        right: 20rem;
+        top: 6rem;      
+    }
+    .ipad-pro-section .ipad-pro-text h1{
+        font-size: 2.5rem;   
+    }   
+}
+
+.ipad-section{
+    display: flex;
+    /* height: 100vh; */
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-top: 1rem;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ipad-section .ipad-section-left{
+    /* width: 50%; */
+}
+
+.ipad-section .ipad-section-left h1{
+    font-size: 3.5rem;
+}
+
+.ipad-section .ipad-section-left p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: .5rem 0;
+}
+
+.ipad-section .ipad-section-left button{
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    background: #0095ff;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.ipad-section .ipad-section-left a{
+   color: #077ed3;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.ipad-section .ipad-section-right img{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:800px) {
+    .ipad-section{
+        flex-direction: column;
+    }
+    .ipad-section .ipad-section-left h1{
+        font-size: 2.5rem;
+    }
+    .ipad-section .ipad-section-left p{
+        font-size: 1.3rem;
+    }
+}
+
+.ipad-mini-section{
+    width: 100%;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.ipad-mini-container{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+@media (max-width:800px) {
+    .ipad-mini-container{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .ipad-mini-container .ipad-mini-right h1{
+        font-size: 2.5rem !important;
+    }
+    .ipad-mini-container .ipad-mini-right p{
+        font-size: 1.1rem !important;
+    }
+    .ipad-mini-container .ipad-mini-right a{
+        font-size: 1rem!important;
+    }
+}
+
+.ipad-mini-container .ipad-mini-left img{
+    width: 100%;
+}
+
+.ipad-mini-container .ipad-mini-right{
+    text-align: center;
+}
+
+.ipad-mini-container .ipad-mini-right h1{
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    margin-bottom: .5rem;
+}
+
+.ipad-mini-container .ipad-mini-right p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.ipad-mini-container .ipad-mini-right button{
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    background: #0095ff;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: .5rem 0;
+
+}
+
+.ipad-mini-container .ipad-mini-right a{
+   color: #077ed3;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.ipad-tab-section{
+    width: 100%;
+    background: #eff1f3;
+    min-height: 100vh;
+    margin-top: -2.2rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.ipad-tab-section .ipad-tab-section-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+@media (max-width: 800px){
+    .ipad-tab-section .ipad-tab-section-container h1{
+        font-size: 2.5rem !important;
+    }
+    
+    .ipad-tabs-container .ipad-tab-item p{
+        font-size: 1rem !important;
+    }
+    .ipad-tabs-container .ipad-tab-item a{
+        font-size: 1rem !important;
+    }
+
+    .compare-shop a{
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width:900px) {
+    .ipad-tab-section{
+        padding:1.5rem ;
+    }
+    
+    .ipad-tab-section .ipad-tab-section-container .ipad-tabs-container{
+        grid-template-columns: 1fr 1fr !important;
+        row-gap: 2.2rem;
+    }
+}
+
+.ipad-tab-section .ipad-tab-section-container h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #3f3939;
+}
+.ipad-tab-section .ipad-tab-section-container .ipad-tabs-container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ipad-tabs-container .ipad-tab-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin: 1rem;
+    padding-bottom: 1rem;
+}
+.ipad-tabs-container .ipad-tab-item.active{
+    border-bottom: 1px solid #cfd0d1;
+    padding-bottom: 2rem;
+}
+
+.ipad-tabs-container .ipad-tab-item .big-img{
+    width: 10rem;
+    height: 13rem;
+}
+
+.ipad-tabs-container .ipad-tab-item .swatches{
+    width: 2rem;
+}
+.ipad-tabs-container .ipad-tab-item .swatches1{
+    width: 5rem;
+}
+
+.ipad-tabs-container .ipad-tab-item h3{
+    font-size: 1.2rem;
+    color: #3f3939;
+}
+
+.ipad-tabs-container .ipad-tab-item p{
+    font-size: 1rem;
+    color: #717070;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ipad-tabs-container .ipad-tab-item button{
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    background: #0095ff;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: .5rem 0;
+}
+
+.ipad-tabs-container .ipad-tab-item a{
+   color: #077ed3;
+    font-size: 1.1rem;
+    font-weight: 500;    
+}
+.sm-img{
+    width: 3rem;
+}
+
+.compare-shop{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.compare-shop a{
+   color: #077ed3;
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+
+.ipad-essential-section{
+    width: 100%;
+    background: #eff1f3;
+    min-height: 100vh;
+    padding: 2rem 4rem 1rem 4rem;   
+}
+
+.ipad-essential-section h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: #4d4c4c;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:800px){
+    .ipad-essential-section{
+        padding: 1.5rem;
+    }
+    .ipad-essential-section h1{
+        font-size: 2.5rem !important;
+    }
+    .single-card .card-text h2{
+        font-size: 2.5rem !important;
+    }
+    .ipad-essential-section .ipad-essential-card{
+        grid-template-columns: 1fr !important;
+        row-gap: 3rem;
+    }
+}
+
+.ipad-essential-section .ipad-essential-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.ipad-essential-section .ipad-essential-card .single-card{
+    background: #fff;
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-card .card-text{
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+}
+
+.single-card .card-text h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.single-card .card-text p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.single-card .card-text .essential-shop{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.single-card .card-text .essential-shop a{
+   color: #077ed3;
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+
+.single-card .card-image-1{
+    width: 100%;
+    flex: 2;
+    background: url(/Images/ipad-images/apple_pencil__ekq506kmmys2_medium.jpg) no-repeat;
+    background-size: cover;
+}
+
+.single-card .card-image-2{
+    width: 100%;
+    flex: 2;
+    background: url(/Images/ipad-images/smart_keyboard_folio__b8j0ydqvjq2q_small_2x.jpg) no-repeat;
+    background-size: cover;   
+}
+
+.airpods-section{
+    width: 100%;
+    background: #eff1f3;
+    /* min-height: 100vh; */
+    padding: 0 4rem 2rem 4rem; 
+}
+
+@media (min-width:800px) {
+   .airpods-section{
+   margin-top: -2.5rem;
+   }
+}
+
+@media (max-width: 800px){
+    .airpods-section{
+        padding: 1.5rem;
+    }
+    .airpods-section-container{
+        flex-direction: column !important;
+    }
+
+    .airpods-section-left h1{
+        font-size: 2.5rem!important;
+    }
+}
+
+.airpods-section .airpods-section-container{
+    width: 100%;
+    height: 70vh;
+    background: #fff;
+    padding: 3rem 0;
+    display: flex;
+}
+
+.airpods-section-container .airpods-section-left{
+    flex: 1;
+    color: #717070;
+    margin: auto;
+    text-align: center;
+}
+.airpods-section-container .airpods-section-right{
+    flex: 1;
+    background: url(/Images/ipad-images/airpods_family__dqikrifl3u0y_large\ \(1\).png) no-repeat;
+    background-size: cover;
+}
+
+.airpods-section-left h1{
+    color: #3f3939;
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+.airpods-section-left p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.airpods-section-left a{
+   color: #077ed3;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.icloud-section{
+    width: 100%;
+    background: #eff1f3;
+    padding: 3rem 4rem 2rem 4rem; 
+}
+
+@media (max-width:800px) {
+    .icloud-section{
+        padding: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .icloud-section h1{
+        font-size: 2.3rem!important;
+    }
+    
+    .icloud-container h2{
+        font-size: 1.8rem!important;
+    }
+    .icloud-container img{
+        width: 70% !important;
+    }
+}
+
+.icloud-section h1{
+    font-size: 3rem ;
+    color: #3f3939;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.icloud-section .icloud-container{
+    background: #fff;
+    text-align: center;
+    padding: 3rem;
+}
+
+.icloud-container h2{
+    font-size: 2.3rem;
+    margin-bottom: .5rem;
+}
+
+.icloud-container p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: .5rem;
+}
+
+.icloud-container a{
+    color: #077ed3;
+    font-size: 1.2rem;  
+}
+
+.icloud-container img{
+    margin-top: 2rem;
+   width: 40%;  
+}
+
+.music-card-image-1{
+    width: 100%;
+    flex: 2;
+    background: url(/Images/ipad-images/apple_music__dq9f4czrhw6e_large.jpg) no-repeat;
+    background-size: cover;   
+}
+.music-card-image-2{
+    width: 100%;
+    flex: 2;
+    background: url(/Images/ipad-images/apple_arcade_tile__rpe6yxbxcnue_small_2x.jpg) no-repeat;
+    background-size: cover;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.between{
+    width: 100%;
+    height: 1rem;
+    background: #eff1f3;
+}

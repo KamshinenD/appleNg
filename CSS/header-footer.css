@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.562);
+}
+
+/* General style */
+a{  
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    padding: none;
+    list-style: none;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 800px) {
+    .mobile-drop-down-container{
+        display: none;
+    }
+
+    .hamburger-img{
+        display: none !important;
+    }
+
+    .nav-apple-logo{
+        display: none !important;
+    }
+
+    .desktop-menu-list{
+        display: flex !important;
+        color: rgb(185, 180, 180);
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .8rem;
+    }
+
+    #search{
+        cursor: pointer;
+    }
+    
+    #search:hover{
+        color: white !important;
+    }
+
+    .hide-desktop-menu-list{
+        display: none !important;
+    }
+    .desktop-search-container .hamburger-img{
+        display: inline !important;
+        font-size: 1rem;
+        margin: end;
+    }
+
+    .search-container{
+        position: relative;
+    }
+
+   #close-search{
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    color: #fff;
+    cursor: pointer;
+   }
+
+   .search-input{
+    width: 93% !important;
+   }
+
+    .footer-container-mobile{
+        display: none;
+    }
+
+    .footer-container-desktop{
+        display: flex !important;
+        justify-content: space-between;
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+
+.nav{
+    width: 100%;
+    height: 3rem;
+    background-color: #000000eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /* border: none; */
+}
+
+.nav-inner{
+    max-width: 1024px;
+    margin: auto;
+    padding: .5rem ;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav-hamburger{
+    color: #fff;
+    width: 1rem;
+    margin-top: auto 0;
+}
+
+
+
+.nav-apple-logo{
+    color: #fff;
+}
+
+.hamburger-img{
+    font-size: 1.5rem;
+}
+
+#toggle-nav{
+    /* display: none; */
+}
+
+#toggle-nav-2{
+    display: none;
+}
+
+.nav-apple-logo{
+    margin: auto;
+}
+
+.apple-logo{
+    font-size: 1.5rem;
+}
+
+.mobile-drop-down-container{
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    background: black;
+    position: absolute;
+    top:2.9rem;
+    transition: all .6s linear;
+}
+
+.mobile-drop-down-container-active{
+    height: 100vh;
+}
+
+
+
+.drop-down-top{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 0.1px solid #626161;
+}
+
+.search-container{
+    width: 80%;
+    background-color: #212121;
+    margin: auto;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #7f7c7c;
+    font-weight: 600;
+}
+
+.search-container input{
+    padding: 5px .5rem;
+    width: 30rem;
+    background-color: #212121;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #7f7c7c;
+}
+
+.menu-list{
+    color: rgb(199, 199, 199);
+    max-width: 40rem;
+    margin: auto;
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+.menu-list-item{
+    line-height: 2.9rem;
+    border-top: 0.1px solid #626161;
+    font-weight: 100;
+}
+
+.menu-list-item:hover{
+    color: #ffffff;
+}
+
+.menu-list-item.top{
+    border: none;
+}
+
+#desktop-menu-list{
+    display: none;
+}
+.desktop-menu-list-item{
+    display: inline-block !important;
+}
+
+.desktop-menu-list-item:hover{
+    color: #ffffff;
+}
+.desktop-search-container{
+    display: none;
+}
+
+
+/* Footer styling */
+footer{
+    width: 100%;
+    background: #f7f8f9;
+    padding: 1rem 1rem .1rem 1rem;
+}
+
+.footer-item{
+    border-bottom: .5px solid #c3c2c2;
+    padding: .5rem 0;
+    color: #6b6b6b;
+}
+
+.footer-item .title-open{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+
+.footer-btn{
+    border: none;
+    font-size: 1rem;
+}
+
+.plus{
+    display: block;
+}
+
+
+.footer-links{
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .7s linear;
+    /* display: none; */
+}
+
+.minus{
+    display: none;
+    background: #f7f8f9;
+}
+.plus{
+    background: #f7f8f9;
+}
+
+.show-footer-links .footer-links{
+    display: block !important;
+    max-height: 50vh;
+}
+
+.show-footer-links .minus{
+    display: inline;
+}
+.show-footer-links .plus{
+    display: none;
+    
+}
+
+.footer-link-item:hover{
+    text-decoration: underline !important;
+    color: black;
+}
+
+.footer-container-desktop{
+    display: none;
+}
+
+.desktop-footer-items{
+    color: #6b6b6b;
+    font-size: .8rem;
+}
+
+.desktop-footer-item-list{
+    line-height: 1.5rem;
+    padding: .2rem 0 .4rem 0;
+}
+
+.bottom-footer{
+    max-width: 1024px;
+    margin: 2em auto;
+    color: #6b6b6b;
+    font-size: .8rem;
+}
+
+.retailer-find{
+    border-bottom: .5px solid #b9b8b8;
+    padding-bottom: .7em;
+    margin-bottom: .7em;
+}
+
+.retailer-find a{
+   color: #077ed3;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    display: flex;
+    gap: 2em;
+}
+
+.copyright span{
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+.copyright span:hover{
+    text-decoration: underline;
+}
+
+.terms{
+    border-right: 1px solid #b9b8b8;
+    padding-right: 1rem ;
+}
+
+.country a:hover{
+    text-decoration: underline;
+}
+
+.site-map{
+    padding-left: 1rem;
+}
+
+@media (max-width:800px) {
+    .retailer-find{
+        border: none;
+    }
+    .copyright-container{
+    flex-direction: column-reverse;
+    gap: 1rem;
+} 
+    .copyright{
+        flex-direction: column;
+        gap: .5rem;
+    }    
+}
+
+.footer-paragraphs{
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    font-size: .8rem;
+    color: #808080;
+    padding: 0 .7rem 1.5rem .7rem;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #c6c4c4;
+}
+
+.footer-paragraphs li{
+    margin-top: 1rem;
+}
+
+.footer-paragraphs p{
+    margin-top: 1.5rem;
+    margin-bottom: -.5rem;
+
+}
+
+footer .stay-connected{
+    text-align: center;
+}
+
+.footer-social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social-icons img{
+    width: 2rem;
+    margin-top: 1rem;
+}

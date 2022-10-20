@@ -1,0 +1,269 @@
+.learn-more a span{
+    font-size: .8rem !important;
+}
+
+@media(min-width:800px){
+    .new-icons{
+        max-width: 75%;
+    }
+    .tab-panel-item{
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+}
+
+@media (min-width:1024px) {
+    .Macbook-pro-13{
+        min-height: 80vh !important;
+    }
+
+    .Macbook-pro-13 h1{
+        font-size: 3rem !important;
+    }
+}
+
+
+
+.mac-hero{
+    padding: 1rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: 3rem auto;
+}
+
+.new-icons{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.new-icons .img-container{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.new-icons .img-container:last-child{
+    margin-right: 0;
+}
+
+.img-container img{
+    width: 90%;
+    height: 70%;
+}
+
+.img-container p{
+    font-size: .7rem;
+    text-align: center;
+}
+
+.img-container .new{
+    margin-top: .2rem;
+    color: #df7e08;
+    font-size: .6rem;
+}
+
+.macbook-air{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.new-text{
+    color: #e48c21;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.macbook-air h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.macbook-air h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.macbook-air .learn-more{
+    color: #0095ff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.learn-more:hover{
+    text-decoration: underline;
+}
+
+.check-later{
+    font-size: 1.2rem;
+    color: #a5a3a3;
+}
+
+.learn-more .chevron{
+    font-size: .9rem;
+}
+
+.mac-image{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mac-image img{
+    object-fit: cover;
+    width: 50%;
+}
+
+/* Macbook pro section */
+.Macbook-pro-13{
+    width: 100%;
+    min-height: 60vh;
+    background: url('/Images/mac-images/promo_mbp13__buwssod6c8vm_large.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.Macbook-pro-13 h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.Macbook-pro-13 h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.buy-learn-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buy-learn-more button{
+    padding: .7em 1em;
+    background: #0095ff;
+    border: #0095ff;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.buy-learn-more .learn-more{
+    color: #0095ff;
+    font-size: 1.1rem;
+}
+
+/* MAC TAB SECTION */
+.mac-tab-container{
+    max-width: 1024px;
+    margin: 3rem auto;
+}
+
+.mac-tab-container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.tabContainer{
+    width: 100%;
+    /* height: 350px; */
+}
+
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    background: transparent;
+
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+
+.tabContainer .tabPanel{
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: none;
+    padding: -1rem 1rem;
+}
+
+.tab-panel-item{
+    /* margin-top: -4rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tab-panel-item .panel-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+    padding-bottom: 1em;
+    gap: 1em;
+    border-bottom: 1px solid #cfcdcd;
+}
+
+.tab-panel-item .panel-item .swatches{
+    width: 4rem;
+    object-fit: cover;
+}
+
+.tab-panel-item .panel-item h3{
+   font-size: 1.5rem;
+   margin-bottom: -1rem;
+}
+
+.tab-panel-item .panel-item p{
+   font-size: 1rem;
+}
+
+.tab-panel-item .panel-item .buy-btn{
+   font-size: 1rem;
+   background: #0095ff;
+   padding: .3rem .5rem;
+   border-radius: 50px;
+   color: #ffff;
+}
+.tab-panel-item .panel-item .learn-more{
+   font-size: .8rem;
+   color: #0095ff;
+}
+
+.others{
+    border: none !important;
+}
+
+.others p{
+    color:gray;
+}
+
+.compare{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5em;
+    color: #0095ff;
+    padding-bottom: 2rem;
+}
+
