@@ -283,10 +283,12 @@ footer{
     display: none;
     background: #f7f8f9;
     outline: none;
+    border: none;
 }
 .plus{
     background: #f7f8f9;
     outline: none;
+    border: none;
 }
 
 .show-footer-links .footer-links{
