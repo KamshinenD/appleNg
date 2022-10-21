@@ -57,15 +57,15 @@ main{
         background: url('/Images/hero_iphone14pro__e5xbgo5ffhg2_small.jpg') no-repeat;
         background-position: center;
         max-height: 60vh;
-        padding-top: 1.5rem;
+        padding-top: 2.5rem;
     }
 
     .hero-pro h1{
         font-size: 2.5rem!important;
-        padding-bottom: 1rem !important;
+        padding-bottom: 1.3rem !important;
     }
     .hero-pro h3{
-        margin-bottom: .3rem !important;
+        margin-bottom: .8rem !important;
     }
     
 }
