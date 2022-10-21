@@ -261,6 +261,7 @@ footer{
 .footer-btn{
     border: none;
     font-size: 1rem;
+    outline: none;
 }
 
 .plus{
@@ -279,16 +280,13 @@ footer{
     /* display: none; */
 }
 
+
 .minus{
     display: none;
     background: #f7f8f9;
-    outline: none;
-    border: none;
 }
 .plus{
     background: #f7f8f9;
-    outline: none;
-    border: none;
 }
 
 .show-footer-links .footer-links{
