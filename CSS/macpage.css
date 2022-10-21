@@ -210,7 +210,6 @@
 }
 
 .tab-panel-item{
-    /* margin-top: -4rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -219,10 +218,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1em;
+    margin-bottom: 1rem;
     padding-bottom: 1em;
     gap: 1em;
     border-bottom: 1px solid #cfcdcd;
+}
+
+@media (max-width:400px){
+.tab-panel-item .panel-item .panel-img{
+    width: 10rem;
+}
+
+.tab-panel-item .panel-item .panel-img.img{
+    margin-top: 1.7rem;
+}
 }
 
 .tab-panel-item .panel-item .swatches{
@@ -234,6 +243,7 @@
    font-size: 1.5rem;
    margin-bottom: -1rem;
 }
+
 
 .tab-panel-item .panel-item p{
    font-size: 1rem;

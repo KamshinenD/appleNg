@@ -78,8 +78,8 @@ a:hover{
 
 @media (min-width:800px) {
  .iphone-14-pro-section{
-    background: url(/Images/iphone-images/hero_iphone14pro__e5xbgo5ffhg2_large.jpg) no-repeat !important;
-    background-size: cover !important;
+    background: url(/Images/iphone-images/hero_iphone14pro__e5xbgo5ffhg2_small.jpg) no-repeat !important;
+    background-size: contain !important;
     background-position: center !important;
     padding-top: 7rem !important;
  }   
