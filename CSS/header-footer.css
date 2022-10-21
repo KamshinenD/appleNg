@@ -130,9 +130,6 @@ ul{
     width: 1rem;
     margin-top: auto 0;
 }
-
-
-
 .nav-apple-logo{
     color: #fff;
 }
@@ -285,9 +282,11 @@ footer{
 .minus{
     display: none;
     background: #f7f8f9;
+    outline: none;
 }
 .plus{
     background: #f7f8f9;
+    outline: none;
 }
 
 .show-footer-links .footer-links{
